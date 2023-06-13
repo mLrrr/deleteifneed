@@ -17,10 +17,5 @@ public class MainController {
 		return "index";
 	}
 	 // handler method to handle list of users
-    @GetMapping("/users")
-    public String users(Model model){
-        List<UserDto> users = userService.findAllUsers();
-        model.addAttribute("users", users);
-        return "users";
-    }
+
 }
