@@ -1,5 +1,4 @@
 package net.javaguides.springboot.web;
-import src.main.java.net.javaguides.springboot.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -17,7 +16,7 @@ public class MainController {
 		return "index";
 	}
 	  
-    @GetMapping("/users")
+    
     public String users(Model model){
         List<UserDto> users = userService.findAllUsers();
         model.addAttribute("users", users);
