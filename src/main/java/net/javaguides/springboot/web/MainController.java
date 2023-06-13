@@ -1,5 +1,5 @@
 package net.javaguides.springboot.web;
-
+import src.main.java.net.javaguides.springboot.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
