@@ -16,10 +16,5 @@ public class MainController {
 		return "index";
 	}
 	  
-    
-    public String users(Model model){
-        List<UserDto> users = userService.findAllUsers();
-        model.addAttribute("users", users);
-        return "users";
-    }
+
 }
