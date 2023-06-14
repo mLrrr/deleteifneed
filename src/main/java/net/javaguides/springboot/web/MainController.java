@@ -24,12 +24,7 @@ public class MainController {
 		return "index";
 	}
 
-	@GetMapping({"/list", "/"})
-	public ModelAndView getAllUsers() {
-		ModelAndView mav = new ModelAndView("list-users");
-		mav.addObject("users", eRepo.findAll());
-		return mav;
-	}
+	
 	  
 
 }
