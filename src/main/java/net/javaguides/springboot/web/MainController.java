@@ -21,7 +21,7 @@ public class MainController {
 	}
 
 	@GetMapping({"/list", "/"})
-	public ModelAndView getAllUsers() {
+	public ModelAndView getAllusers() {
 		ModelAndView mav = new ModelAndView("list-users");
 		mav.addObject("users", eRepo.findAll());
 		return mav;
